@@ -1,5 +1,5 @@
-package java.assignment.inputpackage;
-import java.assignment.modelpackage.Constants;
+package assignment.java.inputpackage;
+import assignment.java.modelpackage.Constants;
 public class UserInputCheck {
 
 	public static boolean checkDouble(String str) {

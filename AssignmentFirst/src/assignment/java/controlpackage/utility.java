@@ -1,9 +1,11 @@
-package java.assignment.controlpackage;
+package assignment.java.controlpackage;
 
 import java.util.ArrayList;
-import java.assignment.inputpackage.UserInputAccept;
-import java.assignment.modelpackage.Item;
-import java.assignment.viewpackage.Result;
+
+import assignment.java.inputpackage.UserInputAccept;
+import assignment.java.modelpackage.Item;
+import assignment.java.viewpackage.Result;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,15 +18,14 @@ public class utility {
 		BufferedReader obj = new BufferedReader(new InputStreamReader(System.in)) ;
 		char ch ;
 		Item i ;
-		Double effectivePriceOfAllItems= 0.0 ;
-		Double totalPrice ;
+		
 		do
 		{
 			i = UserInputAccept.enterInput() ;
-			i.calc_stl() ;
-			totalPrice = i.getQty()*i.getFppi() ;
-			i.setTotal_Price(totalPrice);
-			effectivePriceOfAllItems+=i.getTotal_Price() ;
+			i.calc_stl();
+			
+			
+			
 			list.add(i);
 			System.out.print("Do you want to enter another item details(Enter y/n) : ");
 			ch = obj.readLine().charAt(0) ;
@@ -34,8 +35,7 @@ public class utility {
 		for (Item item : list) {
 			Result.displayResult(item);
 		}
-		String str = String.format("\n%88.3f",effectivePriceOfAllItems );
-		System.out.println(str);
+		
 	}
 	
 }

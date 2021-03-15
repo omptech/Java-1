@@ -1,4 +1,4 @@
-package java.assignment.modelpackage;
+package assignment.java.modelpackage;
 
 public class Raw extends Item{
 

@@ -1,9 +1,10 @@
-package java.assignment.inputpackage;
+package assignment.java.inputpackage;
 
-import java.assignment.modelpackage.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import assignment.java.modelpackage.*;
 
 public class UserInputAccept  {
 

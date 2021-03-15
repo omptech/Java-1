@@ -1,4 +1,4 @@
-package java.assignment.modelpackage;
+package assignment.java.modelpackage;
 
 public class Constants {
 	public static final String RAW =  "raw" ;
