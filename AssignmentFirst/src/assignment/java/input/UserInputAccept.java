@@ -1,10 +1,10 @@
-package assignment.java.inputpackage;
+package assignment.java.input;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import assignment.java.modelpackage.*;
+import assignment.java.model.*;
 
 public class UserInputAccept  {
 
@@ -27,21 +27,21 @@ public class UserInputAccept  {
 		System.out.print("Enter the Item price : ");
 		do{
 			str = br.readLine();
-			valid  = UserInputCheck.checkDouble(str);
+			valid  = UserInputValidate.checkDouble(str);
 		} while(!valid) ;
 		price =  Double.parseDouble(str) ;
 
 		System.out.print("Enter the Item type : ");
 		do{
 			str = br.readLine();
-			valid  = UserInputCheck.checkItemType(str);
+			valid  = UserInputValidate.checkItemType(str);
 		}while(!valid) ;
 		type = str.toLowerCase() ;
 
 		System.out.print("Enter the Item Qty : ");
 		do{
 			str = br.readLine();
-			valid  = UserInputCheck.checkInt(str);
+			valid  = UserInputValidate.checkInt(str);
 		}while(!valid) ;
 		qty = Integer.parseInt(str);
 		

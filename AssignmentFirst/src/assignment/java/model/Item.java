@@ -1,4 +1,4 @@
-package assignment.java.modelpackage;
+package assignment.java.model;
 
 public abstract class Item {
 	protected String name ;

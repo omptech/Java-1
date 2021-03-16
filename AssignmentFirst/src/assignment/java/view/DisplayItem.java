@@ -1,8 +1,8 @@
-package assignment.java.viewpackage;
+package assignment.java.view;
 
-import assignment.java.modelpackage.Item;
+import assignment.java.model.Item;
 
-public class Result {
+public class DisplayItem {
 
 	public static void displayResult(Item i)
 	{

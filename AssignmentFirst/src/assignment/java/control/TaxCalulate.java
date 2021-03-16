@@ -1,17 +1,17 @@
-package assignment.java.controlpackage;
+package assignment.java.control;
 
 import java.util.ArrayList;
 
-import assignment.java.inputpackage.UserInputAccept;
-import assignment.java.modelpackage.Item;
-import assignment.java.viewpackage.Result;
+import assignment.java.input.UserInputAccept;
+import assignment.java.model.Item;
+import assignment.java.view.DisplayItem;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-public class utility {
+public class TaxCalulate {
 
 	public static void main(String[] args) throws IOException {
 		ArrayList<Item> list = new ArrayList<Item>();
@@ -31,9 +31,9 @@ public class utility {
 			ch = obj.readLine().charAt(0) ;
 		}while((ch=='y')||(ch=='Y'));
 		
-		Result.displayResultFormat();
+		DisplayItem.displayResultFormat();
 		for (Item item : list) {
-			Result.displayResult(item);
+			DisplayItem.displayResult(item);
 		}
 		
 	}
